@@ -6,34 +6,69 @@
     border: 0;
     box-sizing: border-box;
 }
+
 @font-face {
-    font-family: 'PTSans-Regular';
-    src: url('/fonts/PTSans-Regular.eot') format('embedded-opentype'),
-    url('/fonts/PTSans-Regular.ttf') format('truetype'),
-    url('/fonts/PTSans-Regular.svg') format('svg'),
-url(../fonts/PTSans-Regular.woff) format('woff');
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Bold.eot') format('embedded-opentype'),
+    url('/fonts/Gilroy-Bold.ttf') format('truetype'),
+    url('/fonts/Gilroy-Bold.woff') format('woff');
     font-style: normal;
-    font-weight: normal;
-    font-display: swap;
-}
-@font-face {
-    font-family: 'PTSans-Bold';
-    src: url('/fonts/PTSans-Bold.eot') format('embedded-opentype'),
-    url('/fonts/PTSans-Bold.ttf') format('truetype'),
-    url('/fonts/PTSans-Bold.svg') format('svg'),
-url(../fonts/PTSans-Bold.woff) format('woff');
-    font-style: normal;
-    font-weight: normal;
+    font-weight: bold;
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-Medium.eot') format('embedded-opentype'),
+    url('/fonts/Gilroy-Medium.ttf') format('truetype'),
+    url('/fonts/Gilroy-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: medium;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url('/fonts/Gilroy-ExtraBold.eot') format('embedded-opentype'),
+    url('/fonts/Gilroy-ExtraBold.ttf') format('truetype'),
+    url('/fonts/Gilroy-ExtraBold.woff') format('woff');
+    font-style: normal;
+    font-weight: extrabold;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('/fonts/Chronicle-display-bold.eot') format('embedded-opentype'),
+    url('/fonts/Chronicle-display-bold.ttf') format('truetype'),
+    url('/fonts/Chronicle-display-bold.svg') format('svg'),
+    url('/fonts/Chronicle-display-bold.woff') format('woff');
+    font-style: normal;
+    font-weight: bold;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Chronicle Display';
+    src: url('/fonts/Chronicle-display-semibold.eot') format('embedded-opentype'),
+    url('/fonts/Chronicle-display-semibold.ttf') format('truetype'),
+    url('/fonts/Chronicle-display-semibold.svg') format('svg'),
+    url('/fonts/Chronicle-display-semibold.woff') format('woff');
+    font-style: normal;
+    font-weight: semibold;
+    font-display: swap;
+}
+
+/* BASE */
 html,body{
     height: 100%;
     line-height: 1;
-    font-size: 16px;
-    background-color: #354147;
+    font-size: 18px;
+    line-height: 22px;
     color: #fff;
-    font-family: PTSans-Bold, serif;
+    font-family: Gilroy, serif;
+    font-weight: bold;
+    background: #0B1D26;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.2);
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -45,15 +80,99 @@ ul,ol,li{
 img{
     vertical-align: top;
 }
+.container{
+    max-width: 1462px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
 
-.wrapper{
+/* HEADER */
+
+.header__top{
+    width: 1790px;
+    padding: 60px 15px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logo{
+    font-family: Chronicle Display, serif;
+    font-size: 32px;
+    line-height: 38px;
+    letter-spacing: 0.01em;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+.menu__list{
+    display: flex;
+}
+.menu__item{
+    margin-left: 40px;
+}
+.menu__link{
+    transition: 0.3s ease-in;
+}
+.menu__link:hover{
+    color:red;
+}
+
+.login{
+    font-size: 17px;
+    position: relative;
+    transition: 0.3s ease-in;
+    padding-left: 30px;
+}
+.login:hover{
+   color:darkblue;
+}
+
+.login::before{
+    content: '';
+    position:absolute;
+    width: 24px;
+    height: 24px;
+    top: -6px;
+    left: 0;
+    background-image: url(../img/account.svg);
+}
+
+.header__title-label { 
+    font-weight: 800;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    color: #FBD784;
+    position: relative;
+    padding-left: 100px;
+}
+.header__title-label::before { 
+    content: '';
+    position:absolute;
+    width: 72px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background-color: #FBD784;
+}
+.header__title { 
+font-family: Chronicle Display;
+font-weight: 600;
+font-size: 88px;
+line-height: 100px;
+text-transform: capitalize;
+}
+.header__title-scroll {
+    position: relative;
+}
+
+
+
+
+/* .wrapper{
     min-height: 100%;
 }
-.container{
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 50px 20px;
-}
+
 
 .parallax{
    min-height: 100vh;
@@ -97,6 +216,31 @@ img{
     left: -20px;
     z-index: 1;
 }
+
+.content{
+    background-color: #0B1D26;
+    position: relative;
+    z-index: 2;
+}
+.content::before{
+    pointer-events: none;
+   content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    transform: translate(0, -100%);
+    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
+}
+.content__container{}
+.content__title{
+    font-size: 35px;
+    margin: 0 0 30px 0;
+}
+.content__text p{
+    margin: 0 0 30px 0;
+}
 .images-parallax{}
 .images-parallax__item{
     position: absolute;
@@ -133,30 +277,7 @@ img{
         background-position: 20% top;
     }
 }
-.content{
-    background-color: #0B1D26;
-    position: relative;
-    z-index: 2;
-}
-.content::before{
-    pointer-events: none;
-   content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 300px;
-    transform: translate(0, -100%);
-    background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
-}
-.content__container{}
-.content__title{
-    font-size: 35px;
-    margin: 0 0 30px 0;
-}
-.content__text p{
-    margin: 0 0 30px 0;
-}
+
 
 @media (max-width: 767px) {
     .parallax__title{
@@ -175,4 +296,4 @@ img{
         flex: 0 0 50px;
         margin: 0 10px 0 0;
     }
-}
+} */

@@ -44,23 +44,23 @@ window.onload = function () {
 			coordYprocent = coordY / parallaxHeight * 100;
 		});
 ////scroll
-		let thresholSets = [];
-		for (let i = 0; 1 <= 1.0; i += 0.001){
-			thresholSets.push(i);
-		}
-		const callback = function (entries, observer) {
-			const scrollToProcent = window.pageYOffset /  parallax.offsetHeight * 100;
-			setParallaxItemsStyle(scrollTopProcent);
-		};
-		const observer = new IntersectionObserver(callback, {
-			threshold: thresholdSets
-		});
-		observer.observe(document.querySelector('.content'));
+		// let thresholSets = [];
+		// for (let i = 0; 1 <= 1.0; i += 0.001){
+		// 	thresholSets.push(i);
+		// }
+		// const callback = function (entries, observer) {
+		// 	const scrollToProcent = window.pageYOffset /  parallax.offsetHeight * 100;
+		// 	setParallaxItemsStyle(scrollTopProcent);
+		// };
+		// const observer = new IntersectionObserver(callback, {
+		// 	threshold: thresholdSets
+		// });
+		// observer.observe(document.querySelector('.content'));
 
-		function setParallaxItemsStyke(scrollTopProcent) {
-			content.style.cssText = `transform: translate(0% - ${scrollTopProcent / 9}%);`;
-			mountains.parentElement.style.cssText = `transform: translate(0%, - ${scrollTopProcent / 6}%);`;
-			human.parentElement.style.cssText = `transform: translate(0%, - ${scrollTopProcent / 3}%);`;
-		}
+		// function setParallaxItemsStyke(scrollTopProcent) {
+		// 	content.style.cssText = `transform: translate(0% - ${scrollTopProcent / 9}%);`;
+		// 	mountains.parentElement.style.cssText = `transform: translate(0%, - ${scrollTopProcent / 6}%);`;
+		// 	human.parentElement.style.cssText = `transform: translate(0%, - ${scrollTopProcent / 3}%);`;
+		// }
 	}
 }
