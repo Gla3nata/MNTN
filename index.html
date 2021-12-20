@@ -36,8 +36,8 @@
 		</a>
 	</div>
 	</div>
-	<div class=" container">
-		<div class="header__title-label">Путеводитель</div>
+	<div class="container">
+		<div class="header__title-label label">Путеводитель</div>
 			<h1 class="header__title">Будьте готовы к путешествиям и не только!</h1>
 			<a class="header__title-scroll" href="#">Подробнее
 				<svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -46,11 +46,12 @@
 			</a>
 	</div>
 </header>
-<div class=" container">
+<main class="main">
+<div class="container">
 	<div class="content">
 		<div class="content-item">
-			<div class="content__text">
-				<div class="content__text-label">Начало</div>
+			<div class="content__text" data-number="01">
+				<div class="content__text-label label">Начало</div>
 				<h2 class="content__text-title">Какой у тебя уровень подготовки?</h2>
 				<p class="content__text-desc">
 				Определение вашего уровня туриста может быть важным инструментом при планировании будущих походов. 
@@ -58,7 +59,11 @@
 				 такими как All Trails и Modern Hiker. 
 				Какой ваш уровень путешественника - новичок, умеренный, продвинутый умеренный, эксперт или опытный турист?
 				</p>
-				<a class="content__text__title-scroll" href="#">...Продолжить чтение</a>
+				<a class="content__text__title-scroll" href="#">...Продолжить чтение 
+					<svg class="arrow-scroll width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
+					</svg>
+				</a>
 				<p class="content__text-hide">Без физической подготовки и опыта такое мероприятие может выбить из колеи.
 					Существует шесть категорий сложности походов, и начинать нужно, конечно, с самого простого.
 					В первой категории протяженность маршрута составляет примерно 100 км. Я, например, свой первый маршрут преодолела за неделю.
@@ -73,19 +78,23 @@
 				</p>
 			</div>
 			<div class="content__image">
-				<img src="" alt="">
+				<img src="/img/img1.jpg" alt="mountains">
 			</div>
 		</div>
 		<div class="content-item">
-			<div class="content__text">
-				<div class="content__text-label">Всё необходимое</div>
+			<div class="content__text" data-number="02">
+				<div class="content__text-label label">Всё необходимое</div>
 				<h2 class="content__text-title">Выбираем подходящее снаряжение</h2>
 				<p class="content__text-desc">
 					В начале пеших прогулок хорошо то, что вам действительно не нужно какое-либо специальное снаряжение, вы, вероятно, сможете обойтись тем, что у вас уже есть.
 					Начнем с одежды. Типичная ошибка новичков в походах - это носить джинсы и обычную одежду, которая станет тяжелой и натертой, если они вспотеют или промокнут.
 				</p>
-				<a class="content__text__title-scroll" href="#">...Продолжить чтение</a>
-				<p class="content__text-hide">Универсальный список снаряжения для походы в горы</p>
+				<a class="content__text__title-scroll" href="#">...Продолжить чтение
+					<svg class="arrow-scroll width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
+						</svg>
+				</a>
+				<div class="content__text-hide">Универсальный список снаряжения для походы в горы
 					<ul class="content__text-list">
 						<li class="content__text-item">Рюкзак</li>
 						<li class="content__text-item">Палатка</li>
@@ -103,8 +112,8 @@
 						<li class="content__text-item">Защитные перчатки</li>
 						<li class="content__text-item">Белье</li>
 						<li class="content__text-item">Треккинговые ботинки или кроссовки</li>
-						<li class="content__text-item">Треккинговые сандалии или сланци для бивака
-							Носки</li>
+						<li class="content__text-item">Треккинговые сандалии или сланци для бивака</li>
+						<li class="content__text-item">Носки</li>
 						<li class="content__text-item">Личные вещи</li>
 						<li class="content__text-item">Средства личной гигиены</li>
 						<li class="content__text-item">Тарелка + ложка + кружка + нож</li>
@@ -114,35 +123,78 @@
 						<li class="content__text-item">Герметичные пакеты для вещей, техники и документов</li>
 						<li class="content__text-item">Техника, деньги, документы, зарядные устройства, батарейки</li>
 					</ul>	
+				</div>
 			</div>
 			<div class="content__image">
-				<img src="" alt="">
+				<img src="/img/img2.jpg" alt="mountains">
 			</div>
 		</div>
 
 		<div class="content-item">
-			<div class="content__text">
-				<div class="content__text-label">Направление</div>
+			<div class="content__text" data-number="03">
+				<div class="content__text-label label">Направление</div>
 				<h2 class="content__text-title">Выбираем маршрут</h2>
 				<p class="content__text-desc">
 					Для начала распечатайте путеводитель и карту. Если идет дождь, бросьте их в сумку с застежкой-молнией. 
 					Прочтите руководство, изучите карту и получите хорошее представление о том, чего ожидать. 
 					Мне нравится знать, какой будет моя следующая достопримечательность, когда я иду пешком. 
 					Например, я прочитаю руководство и знаю, что, скажем, через три киллометра я поверну направо на перекрестке.
-					читать далее
+					
 				</p>
-				<a class="content__text__title-scroll" href="#">...Продолжить чтение</a>
+				<a class="content__text__title-scroll" href="#">...Продолжить чтение
+					<svg class="arrow-scroll width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
+						</svg>
+				</a>
+				<div class="content__text-hide">
+					Расчитайте продолжительность похода. Меньше 7 будет не интересно, больше 10 – может быть уже тяжело.
+					Маршрут должен проходиться без специального альпинистского снаряжения, ведь речь идет о первых самостоятельных горных походах, у вас нет ледового или скального снаряжения, и пользоваться им вы еще не умеете.
+					Маршрут должен быть по силам физически выносливым и здоровым людям.
+					При планировании маршрута необходимо учитывать сложность преодолеваемых препятствий, в первую очередь, перевалов. 
+					В спортивном туризме в зависимости от высоты, крутизны склона и вида рельефа, выделяют три категории сложности: от 1, простой, до 3, сложной. У каждой категории есть две подкатегории А и Б. Перевалы 1 категории – это простые каменистые склоны, крутизной до 40 градусов. Для передвижения по ним требуется индивидуальная техника и простейшая страховка треккинговыми палками. Перевалы 3 категории сложности требуют провешивания страховочных перил, навыков скального лазания и работы в связках. 
+					Соответственно, для первого самостоятельного похода, стоит ориентироваться на перевалы не выше первой категории сложности.
+				</div>	
 			</div>
 			<div class="content__image">
-				<img src="" alt="">
+				<img src="/img/img3.jpg" alt="mountains">
 			</div>
 		</div>
 		
 	</div>
 </div>
-<main>
-
 </main>
+<footer>
+	<div class="container">
+		<div class="footer-inner">
+			<div class="footer-box">
+				<div class="logo"> M N T N</div>
+				<p class="footer-text">Отправляйтесь туда и откройте для себя свой мир путешествий!</p>
+				<p class="footer-copytight">
+				Copyright 2019 MNTN, Inc. Terms & Privacy
+				</p>
+			</div>
+			<div class="footer__nav-wrapper"></div>
+			<div class="footer__nav">
+				<h4 class="footer__nav-title">Подробнее в блоге</h4>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Об авторе</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Написать нам</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Политика конфиденциальности</a></li>
+				</ul>
+			</div>
+			<div class="footer__nav">
+				<h4 class="footer__nav-title">Подробнее о MNTN</h4>
+				<ul class="footer__nav-list">
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Команда</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Вакансии</a></li>
+					<li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
 <!-- <div class="wrapper">
 	<section class="page">
 		<div class="parallax">
