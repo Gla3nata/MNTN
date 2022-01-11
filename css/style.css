@@ -87,9 +87,7 @@ img{
     max-width: 1462px;
     margin: 0 auto;
     padding: 50px 20px;
-    border: 1px solid snow;
 }
-
 
 .parallax{
     min-height: 100vh;
@@ -116,7 +114,6 @@ img{
     font-weight: 700;
 }
 .header__top{
-    border: 1px solid red;
     margin-bottom: 60px;
     display: flex;
     justify-content: space-between;
@@ -172,7 +169,6 @@ img{
     max-width: 1000px;
     margin: 0 auto;
     padding: 60px 80px;
-    border: 1px solid greenyellow;
 }
 
 .header__title-label{
@@ -405,12 +401,56 @@ img{
 .social{
     position: fixed;
     z-index: 1000;
-    transform: rotate(90deg);
-    margin-top: 350px;
+    top: 350px;
     display: flex;
+    flex-direction: column;
 }
+.social-txt{
+    transform: rotate(90deg);
+    margin-bottom: 60px;
+}
+
 .social-icon{
-    margin:0 25px;
+    margin:15px 50px;
+}
+.pages__scroll{
+    position: fixed;
+    z-index: 1000;
+    right: 80px;
+    top: 315px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.pages__scroll-wrapper{
+    position: relative;
+    padding-top: 35px;
+}
+.pages__scroll-wrapper:after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    border-right: 3px solid #fff;
+    top:0;
+    right: 0;
+    opacity: 0.5;
+}
+
+.pages__scroll-item{
+    margin-bottom: 40px;
+    position: relative;
+    padding-right: 32px;
+}
+.pages__scroll-item:after{
+
+    position: absolute;
+    width: 3px;
+    height: 60px;
+    border-right: 3px solid #fff;
+    top:0;
+    right: 0;
+
 }
 
 
