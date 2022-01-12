@@ -1,241 +1,257 @@
 <!doctype html>
 <html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Путешествие в горы</title>
-	<link rel="stylesheet" href="css/style.css">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Путешествие в горы</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
+
 <body>
-<div class="wrapper">
-	<div class="social">
-		<p class="social-txt">Подписаться</p>
-		<a class="social-icon" href="#">
-			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <div class="wrapper">
+        <div class="social">
+            <p class="social-txt">Подписаться</p>
+            <a class="social-icon" href="#">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M5.8 1.90735e-05H14.2C17.4032 1.90735e-05 20 2.59677 20 5.80002V14.2C20 17.4033 17.4032 20 14.2 20H5.8C2.59675 20 0 17.4033 0 14.2V5.80002C0 2.59677 2.59675 1.90735e-05 5.8 1.90735e-05ZM5.6 2C3.61177 2 2 3.61178 2 5.6V14.4C2 16.3882 3.61177 18 5.6 18H14.4C16.3882 18 18 16.3882 18 14.4V5.6C18 3.61178 16.3882 2 14.4 2H5.6ZM15.25 3.5C15.9404 3.5 16.5 4.05965 16.5 4.75C16.5 5.44036 15.9404 6 15.25 6C14.5596 6 14 5.44036 14 4.75C14 4.05965 14.5596 3.5 15.25 3.5ZM10 5C12.7614 5 15 7.23858 15 10C15 12.7614 12.7614 15 10 15C7.23857 15 5 12.7614 5 10C5 7.23858 7.23857 5 10 5ZM10 7C8.3431 7 7 8.3432 7 10C7 11.6569 8.3431 13 10 13C11.6569 13 13 11.6569 13 10C13 8.3432 11.6569 7 10 7Z" fill="white"/>
 			</svg>
-		</a>
-		<a class="social-icon" href="#">
-			<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            </a>
+            <a class="social-icon" href="#">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path d="M22.4592 6.01238C21.6896 6.35373 20.8624 6.58442 19.9944 6.68815C20.8803 6.15701 21.5609 5.31598 21.8813 4.31378C21.052 4.80564 20.1336 5.16278 19.156 5.3552C18.3732 4.52112 17.2579 4 16.0235 4C13.6534 4 11.7317 5.92147 11.7317 8.29155C11.7317 8.6279 11.7697 8.95546 11.8429 9.2696C8.27609 9.0906 5.11375 7.38203 2.99709 4.78551C2.62765 5.41935 2.41601 6.15656 2.41601 6.94309C2.41601 8.43204 3.17364 9.74563 4.32523 10.5153C3.62179 10.4929 2.95996 10.2999 2.38139 9.97846C2.38098 9.99639 2.38098 10.0143 2.38098 10.0324C2.38098 12.1118 3.86033 13.8463 5.82359 14.2406C5.46349 14.3387 5.08434 14.3912 4.69294 14.3912C4.4164 14.3912 4.14755 14.3642 3.88546 14.3142C4.43161 16.0191 6.01653 17.26 7.89454 17.2945C6.42576 18.4457 4.57527 19.1318 2.56453 19.1318C2.21812 19.1318 1.87651 19.1114 1.54077 19.0717C3.44003 20.2894 5.69591 21 8.1195 21C16.0134 21 20.3302 14.4605 20.3302 8.78918C20.3302 8.60314 20.326 8.41805 20.3177 8.23395C21.1563 7.62886 21.8839 6.87302 22.4592 6.01238Z" fill="white"/>
 			</svg>
-		</a>
-	</div>
-	<div class="pages__scroll">
-		<div class="pages__scroll-wrapper">
-			<p class="pages__scroll-item">Cтарт</p>
-			<p class="pages__scroll-item">01</p>
-			<p class="pages__scroll-item">02</p>
-			<p class="pages__scroll-item">03</p>
-		</div>
+            </a>
+        </div>
+        <div class="pages__scroll">
+            <div class="pages__scroll-wrapper">
+                <div class="block">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide slide">
+                                <div class="slide-1">
+                                    <a class="pages__scroll-item" href="#top">Cтарт</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide-1">
+                                    <a class="pages__scroll-item" href="#first">01</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide-2">
+                                    <a class="pages__scroll-item" href="#second">02</a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide slide">
+                                <div class="slide-3">
+                                    <a class="pages__scroll-item" href="#third">03</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- If we need scrollbar -->
+                        <div class="swiper-scrollbar"></div>
+                    </div>
+                </div>
+            </div>
 
-	</div>
-	<section class="page">
-		<div class="parallax">
-			<div class="parallax__body">
-				<div class="parallax__container _container">
-					<div class="header__top">
-						<div class="logo"> M N T N</div>
-						<nav class="menu">
-							<button class="menu-btn">
+        </div>
+        <section class="page">
+            <div class="parallax">
+                <div class="parallax__body">
+                    <div class="parallax__container _container">
+                        <div class="header__top">
+                            <div class="logo"> M N T N</div>
+                            <nav class="menu">
+                                <button class="menu-btn">
 								<span></span>
 							</button>
-							<ul class="menu__list">
-								<li class="menu__item">
-									<a class="menu__link" href="">Оборудование</a>
-								</li>
-								<li class="menu__item">
-									<a class="menu__link" href="">О нас</a>
-								</li>
-								<li class="menu__item">
-									<a class="menu__link" href="">Блог</a>
-								</li>
-							</ul>
-						</nav>
-						<a class="login" href="#">
+                                <ul class="menu__list">
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="">Оборудование</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="">О нас</a>
+                                    </li>
+                                    <li class="menu__item">
+                                        <a class="menu__link" href="">Блог</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <a class="login" href="#">
 							Личный кабинет
 						</a>
-					</div>
-					<div class="header__content">
-						<div class="header__title-label label">Путеводитель</div>
-						<h1 class="header__title">Будьте готовы к путешествиям!</h1>
-						<a class="header__title-scroll" href="#first">Подробнее
+                        </div>
+                        <div class="header__content" id="top">
+                            <div class="header__title-label label">Путеводитель</div>
+                            <h1 class="header__title">Будьте готовы к путешествиям!</h1>
+                            <a class="header__title-scroll" href="#first">Подробнее
 							<svg width="16" height="24" viewBox="0 0 16 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M16 16L14.59 14.59L9 20.17V0H7V20.17L1.42 14.58L0 16L8 24L16 16Z" fill="white"/>
 							</svg>
 						</a>
-					</div>
-				</div>
-				<div class="parallax__images images-parallax">
-					<div class="images-parallax__item">
-						<div class="images-parallax__clouds"></div>
-					</div>
-					<div class="images-parallax__item">
-						<div class="images-parallax__mountains"></div>
-					</div>
-					<div class="images-parallax__item">
-						<div class="images-parallax__human"></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="content">
-		<div class="_container">
-		<div class="content-item" id="first">
-			<div class="content__text" data-number="01">
-				<div class="content__text-label label">Начинаем</div>
-				<h2 class="content__text-title">Какой у тебя уровень подготовки?</h2>
-				<p class="content__text-desc">
-					Определение вашего уровня туриста может быть важным инструментом при планировании будущих походов.
-					Это руководство по пешеходным уровням поможет вам спланировать походы в соответствии с различными рейтингами походов,
-					такими как All Trails и Modern Hiker.
-					Какой ваш уровень путешественника - новичок, умеренный, продвинутый умеренный, эксперт или опытный турист?
-				</p>
-				<a class="content__text__title-scroll" href="#">...Продолжить чтение
+                        </div>
+                    </div>
+                    <div class="parallax__images images-parallax">
+                        <div class="images-parallax__item">
+                            <div class="images-parallax__clouds"></div>
+                        </div>
+                        <div class="images-parallax__item">
+                            <div class="images-parallax__mountains"></div>
+                        </div>
+                        <div class="images-parallax__item">
+                            <div class="images-parallax__human"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="_container">
+                <div class="content-item" id="first">
+                    <div class="content__text" data-number="01">
+                        <div class="content__text-label label">Начинаем</div>
+                        <h2 class="content__text-title">Какой у тебя уровень подготовки?</h2>
+                        <p class="content__text-desc">
+                            Определение вашего уровня туриста может быть важным инструментом при планировании будущих походов. Это руководство по пешеходным уровням поможет вам спланировать походы в соответствии с различными рейтингами походов, такими как All Trails и Modern Hiker.
+                            Какой ваш уровень путешественника - новичок, умеренный, продвинутый умеренный, эксперт или опытный турист?
+                        </p>
+                        <a class="content__text__title-scroll" href="#">...Продолжить чтение
 					<svg class="arrow-scroll width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
 					</svg>
 				</a>
-				<p class="content__text-hide">Без физической подготовки и опыта такое мероприятие может выбить из колеи.
-					Существует шесть категорий сложности походов, и начинать нужно, конечно, с самого простого.
-					В первой категории протяженность маршрута составляет примерно 100 км. Я, например, свой первый маршрут преодолела за неделю.
-					Для меня это было фактически тренировкой перед более сложным походом, горным туром по Байкалу –
-					моим первым подъёмом, который длился практически весь день. Это тоже горный поход первой категории сложности –
-					он не подразумевает сложных переходов, крутых подъёмов и спусков.
-					Но для тех, кто идёт в горы впервые, пройти его всё равно будет непросто.
-					В нашей группе, например, у многих было довольно истеричное состояние и желание повернуть назад. Потому что длительный затяжной подъём с рюкзаком весом в 20 килограммов сильно выбивал из равновесия. Ко всему прочему горы встретили нас сильной грозой и мы все промокли.
-					Однако через пару дней все пришли в норму – так сказать, преодолели огонь, воду и медные трубы. Как-никак изо дня в день тело тренируется и привыкает к физической нагрузке. Так что если вы выдержите поход первой категории сложности, то сможете пойти дальше.
-					Горы затягивают, поэтому уже на следующий год я поехала на Алтай – ведь это же мечта практически любого человека в России. Этот поход был уже сложнее – он большой по километражу и предполагает длительный маршрут примерно в две недели. Вам нужно
-					быть готовыми к тому, что придётся проходить ледники, сложные крутые спуски и курумники – нагромождения из камней разного размера.
-				</p>
-			</div>
-			<div class="content__image">
-				<img src="img\img1.jpg" alt="mountains">
+                        <p class="content__text-hide">Без физической подготовки и опыта такое мероприятие может выбить из колеи. Существует шесть категорий сложности походов, и начинать нужно, конечно, с самого простого. В первой категории протяженность маршрута составляет примерно
+                            100 км. Я, например, свой первый маршрут преодолела за неделю. Для меня это было фактически тренировкой перед более сложным походом, горным туром по Байкалу – моим первым подъёмом, который длился практически весь день. Это
+                            тоже горный поход первой категории сложности – он не подразумевает сложных переходов, крутых подъёмов и спусков. Но для тех, кто идёт в горы впервые, пройти его всё равно будет непросто. В нашей группе, например, у многих было
+                            довольно истеричное состояние и желание повернуть назад. Потому что длительный затяжной подъём с рюкзаком весом в 20 килограммов сильно выбивал из равновесия. Ко всему прочему горы встретили нас сильной грозой и мы все промокли.
+                            Однако через пару дней все пришли в норму – так сказать, преодолели огонь, воду и медные трубы. Как-никак изо дня в день тело тренируется и привыкает к физической нагрузке. Так что если вы выдержите поход первой категории сложности,
+                            то сможете пойти дальше. Горы затягивают, поэтому уже на следующий год я поехала на Алтай – ведь это же мечта практически любого человека в России. Этот поход был уже сложнее – он большой по километражу и предполагает длительный
+                            маршрут примерно в две недели. Вам нужно быть готовыми к тому, что придётся проходить ледники, сложные крутые спуски и курумники – нагромождения из камней разного размера.
+                        </p>
+                    </div>
+                    <div class="content__image">
+                        <img src="img\img1.jpg" alt="mountains">
 
-			</div>
-		</div>
-		<div class="content-item" id="second">
-			<div class="content__text" data-number="02">
-				<div class="content__text-label label">Всё необходимое</div>
-				<h2 class="content__text-title">Выбираем подходящее снаряжение</h2>
-				<p class="content__text-desc">
-					В начале пеших прогулок хорошо то, что вам действительно не нужно какое-либо специальное снаряжение, вы, вероятно, сможете обойтись тем, что у вас уже есть.
-					Начнем с одежды. Типичная ошибка новичков в походах - это носить джинсы и обычную одежду, которая станет тяжелой и натертой, если они вспотеют или промокнут.
-				</p>
-				<a class="content__text__title-scroll" href="#">...Продолжить чтение
+                    </div>
+                </div>
+                <div class="content-item" id="second">
+                    <div class="content__text" data-number="02">
+                        <div class="content__text-label label">Всё необходимое</div>
+                        <h2 class="content__text-title">Выбираем подходящее снаряжение</h2>
+                        <p class="content__text-desc">
+                            В начале пеших прогулок хорошо то, что вам действительно не нужно какое-либо специальное снаряжение, вы, вероятно, сможете обойтись тем, что у вас уже есть. Начнем с одежды. Типичная ошибка новичков в походах - это носить джинсы и обычную одежду, которая
+                            станет тяжелой и натертой, если они вспотеют или промокнут.
+                        </p>
+                        <a class="content__text__title-scroll" href="#">...Продолжить чтение
 					<svg class="arrow-scroll width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
 					</svg>
 				</a>
-				<div class="content__text-hide">Универсальный список снаряжения для походы в горы
-					<ul class="content__text-list">
-						<li class="content__text-item">Рюкзак</li>
-						<li class="content__text-item">Палатка</li>
-						<li class="content__text-item">Спальный мешок</li>
-						<li class="content__text-item">Каримат</li>
-						<li class="content__text-item">Треккинговые палки</li>
-						<li class="content__text-item">Маленький рюкзак для городов и радиалок</li>
-						<li class="content__text-item">Мембрана или виндстоппер</li>
-						<li class="content__text-item">Штаны, шорты</li>
-						<li class="content__text-item">Термобелье</li>
-						<li class="content__text-item">Флисовый батник (флиска)</li>
-						<li class="content__text-item">Футболки и треккинговые рубашки</li>
-						<li class="content__text-item">Дождевик</li>
-						<li class="content__text-item">Панама / баф от солнца</li>
-						<li class="content__text-item">Защитные перчатки</li>
-						<li class="content__text-item">Белье</li>
-						<li class="content__text-item">Треккинговые ботинки или кроссовки</li>
-						<li class="content__text-item">Треккинговые сандалии или сланци для бивака</li>
-						<li class="content__text-item">Носки</li>
-						<li class="content__text-item">Личные вещи</li>
-						<li class="content__text-item">Средства личной гигиены</li>
-						<li class="content__text-item">Тарелка + ложка + кружка + нож</li>
-						<li class="content__text-item">Фонарик</li>
-						<li class="content__text-item">Бутылка для воды</li>
-						<li class="content__text-item">Личная аптечка</li>
-						<li class="content__text-item">Герметичные пакеты для вещей, техники и документов</li>
-						<li class="content__text-item">Техника, деньги, документы, зарядные устройства, батарейки</li>
-					</ul>
-				</div>
-			</div>
-			<div class="content__image">
-				<img src="img/img2.jpg" alt="mountains">
-			</div>
-		</div>
-		<div class="content-item" id="third">
-			<div class="content__text" data-number="03">
-				<div class="content__text-label label">Направление</div>
-				<h2 class="content__text-title">Выбираем маршрут</h2>
-				<p class="content__text-desc">
-					Для начала распечатайте путеводитель и карту. Если идет дождь, бросьте их в сумку с застежкой-молнией.
-					Прочтите руководство, изучите карту и получите хорошее представление о том, чего ожидать.
-					Мне нравится знать, какой будет моя следующая достопримечательность, когда я иду пешком.
-					Например, я прочитаю руководство и знаю, что, скажем, через три киллометра я поверну направо на перекрестке.
+                        <div class="content__text-hide">Универсальный список снаряжения для походы в горы
+                            <ul class="content__text-list">
+                                <li class="content__text-item">Рюкзак</li>
+                                <li class="content__text-item">Палатка</li>
+                                <li class="content__text-item">Спальный мешок</li>
+                                <li class="content__text-item">Каримат</li>
+                                <li class="content__text-item">Треккинговые палки</li>
+                                <li class="content__text-item">Маленький рюкзак для городов и радиалок</li>
+                                <li class="content__text-item">Мембрана или виндстоппер</li>
+                                <li class="content__text-item">Штаны, шорты</li>
+                                <li class="content__text-item">Термобелье</li>
+                                <li class="content__text-item">Флисовый батник (флиска)</li>
+                                <li class="content__text-item">Футболки и треккинговые рубашки</li>
+                                <li class="content__text-item">Дождевик</li>
+                                <li class="content__text-item">Панама / баф от солнца</li>
+                                <li class="content__text-item">Защитные перчатки</li>
+                                <li class="content__text-item">Белье</li>
+                                <li class="content__text-item">Треккинговые ботинки или кроссовки</li>
+                                <li class="content__text-item">Треккинговые сандалии или сланци для бивака</li>
+                                <li class="content__text-item">Носки</li>
+                                <li class="content__text-item">Личные вещи</li>
+                                <li class="content__text-item">Средства личной гигиены</li>
+                                <li class="content__text-item">Тарелка + ложка + кружка + нож</li>
+                                <li class="content__text-item">Фонарик</li>
+                                <li class="content__text-item">Бутылка для воды</li>
+                                <li class="content__text-item">Личная аптечка</li>
+                                <li class="content__text-item">Герметичные пакеты для вещей, техники и документов</li>
+                                <li class="content__text-item">Техника, деньги, документы, зарядные устройства, батарейки</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content__image">
+                        <img src="img/img2.jpg" alt="mountains">
+                    </div>
+                </div>
+                <div class="content-item" id="third">
+                    <div class="content__text" data-number="03">
+                        <div class="content__text-label label">Направление</div>
+                        <h2 class="content__text-title">Выбираем маршрут</h2>
+                        <p class="content__text-desc">
+                            Для начала распечатайте путеводитель и карту. Если идет дождь, бросьте их в сумку с застежкой-молнией. Прочтите руководство, изучите карту и получите хорошее представление о том, чего ожидать. Мне нравится знать, какой будет моя следующая достопримечательность,
+                            когда я иду пешком. Например, я прочитаю руководство и знаю, что, скажем, через три киллометра я поверну направо на перекрестке.
 
-				</p>
-				<a class="content__text__title-scroll" href="#">...Продолжить чтение
+                        </p>
+                        <a class="content__text__title-scroll" href="#">...Продолжить чтение
 					<svg class="arrow-scroll width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<path d="M16 -6.99382e-07L14.59 1.41L20.17 7L-3.93402e-07 7L-3.0598e-07 9L20.17 9L14.58 14.58L16 16L24 8L16 -6.99382e-07Z" fill="#FBD784"/>
 					</svg>
 				</a>
-				<div class="content__text-hide">
-					Расчитайте продолжительность похода. Меньше 7 будет не интересно, больше 10 – может быть уже тяжело.
-					Маршрут должен проходиться без специального альпинистского снаряжения, ведь речь идет о первых самостоятельных горных походах, у вас нет ледового или скального снаряжения, и пользоваться им вы еще не умеете.
-					Маршрут должен быть по силам физически выносливым и здоровым людям.
-					При планировании маршрута необходимо учитывать сложность преодолеваемых препятствий, в первую очередь, перевалов.
-					В спортивном туризме в зависимости от высоты, крутизны склона и вида рельефа, выделяют три категории сложности: от 1, простой, до 3, сложной. У каждой категории есть две подкатегории А и Б. Перевалы 1 категории – это простые каменистые склоны, крутизной до 40 градусов. Для передвижения по ним требуется индивидуальная техника и простейшая страховка треккинговыми палками. Перевалы 3 категории сложности требуют провешивания страховочных перил, навыков скального лазания и работы в связках.
-					Соответственно, для первого самостоятельного похода, стоит ориентироваться на перевалы не выше первой категории сложности.
-				</div>
-			</div>
-			<div class="content__image">
-				<img src="img/img3.jpg" alt="mountains">
-			</div>
-		</div>
-		</div>
-		<footer>
-			<div class="_container">
-				<div class="footer-inner">
-					<div class="footer-box">
-						<div class="logo"> M N T N</div>
-						<p class="footer-text">Отправляйтесь туда и откройте для себя свой мир путешествий!</p>
-						<p class="footer-copytight">
-							Copyright 2019 MNTN, Inc. Terms & Privacy
-						</p>
-					</div>
-					<div class="footer__nav-wrapper"></div>
-					<div class="footer__nav">
-						<h4 class="footer__nav-title">Подробнее в блоге</h4>
-						<ul class="footer__nav-list">
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#">Об авторе</a></li>
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#">Написать нам</a></li>
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#">Политика конфиденциальности</a></li>
-						</ul>
-					</div>
-					<div class="footer__nav">
-						<h4 class="footer__nav-title">Подробнее о MNTN</h4>
-						<ul class="footer__nav-list">
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#">Команда</a></li>
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#">Вакансии</a></li>
-							<li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
-	</section>
-</div>
-
-
-
-
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-<script src="js/script.js"></script>
+                        <div class="content__text-hide">
+                            Расчитайте продолжительность похода. Меньше 7 будет не интересно, больше 10 – может быть уже тяжело. Маршрут должен проходиться без специального альпинистского снаряжения, ведь речь идет о первых самостоятельных горных походах, у вас нет ледового или
+                            скального снаряжения, и пользоваться им вы еще не умеете. Маршрут должен быть по силам физически выносливым и здоровым людям. При планировании маршрута необходимо учитывать сложность преодолеваемых препятствий, в первую очередь,
+                            перевалов. В спортивном туризме в зависимости от высоты, крутизны склона и вида рельефа, выделяют три категории сложности: от 1, простой, до 3, сложной. У каждой категории есть две подкатегории А и Б. Перевалы 1 категории –
+                            это простые каменистые склоны, крутизной до 40 градусов. Для передвижения по ним требуется индивидуальная техника и простейшая страховка треккинговыми палками. Перевалы 3 категории сложности требуют провешивания страховочных
+                            перил, навыков скального лазания и работы в связках. Соответственно, для первого самостоятельного похода, стоит ориентироваться на перевалы не выше первой категории сложности.
+                        </div>
+                    </div>
+                    <div class="content__image">
+                        <img src="img/img3.jpg" alt="mountains">
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div class="_container">
+                    <div class="footer-inner">
+                        <div class="footer-box">
+                            <div class="logo"> M N T N</div>
+                            <p class="footer-text">Отправляйтесь туда и откройте для себя свой мир путешествий!</p>
+                            <p class="footer-copytight">
+                                Copyright 2019 MNTN, Inc. Terms & Privacy
+                            </p>
+                        </div>
+                        <div class="footer__nav-wrapper"></div>
+                        <div class="footer__nav">
+                            <h4 class="footer__nav-title">Подробнее в блоге</h4>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Об авторе</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Написать нам</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Политика конфиденциальности</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__nav">
+                            <h4 class="footer__nav-title">Подробнее о MNTN</h4>
+                            <ul class="footer__nav-list">
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Команда</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Вакансии</a></li>
+                                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
