@@ -318,25 +318,27 @@ img {
 }
 
 .images-parallax__clouds {
-    background: url("../img/clouds.jpg") top / cover no-repeat;
+    background: url("../img/clouding.jpg") top / cover no-repeat;
     top: 0;
 }
 
 .images-parallax__mountains {
-    background: url("../img/mountains.png") top / cover no-repeat;
+    background: url("../img/mou.png") top / cover no-repeat;
     top: 15%;
     z-index: 2;
 }
 
 .images-parallax__human {
-    background: url("../img/human.png")top / cover no-repeat;
-    top: 45%;
+    background: url("../img/men.png") 20% / cover no-repeat;
+    background-size: 50%;
+    top: 0;
     z-index: 3;
 }
 
 @media (max-aspect-ratio: 3/2) {
     .images-parallax__human {
-        background-position: 20% top;
+        background-position: 20%;
+        background-size: cover;
     }
 }
 
@@ -344,6 +346,7 @@ img {
     .header__title {
         font-size: 50px;
     }
+
     .header__title {
         font-size: 16px;
         margin: 0 0 15px 0;
@@ -354,6 +357,7 @@ img {
     .header__title {
         font-size: 36px;
     }
+
     .header__title-label::before {
         flex: 0 0 50px;
         margin: 0 10px 0 0;
@@ -459,14 +463,15 @@ img {
     z-index: 1000;
     right: 80px;
     top: 315px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+
 }
 
 .pages__scroll-wrapper {
     position: relative;
     padding-top: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 
 .pages__scroll-wrapper:after {
@@ -493,26 +498,4 @@ img {
     border-right: 3px solid #fff;
     top: 0;
     right: 0;
-}
-
-.block {
-    width: 200px;
-    /* border: 1px solid red; */
-    height: 300px;
-}
-
-.slide {
-    width: 200px;
-    height: 200px;
-    /* border: 1px solid gray; */
-    margin: 10px;
-}
-
-.swiper {
-    height: 300px;
-}
-
-.swiper-vertical>.swiper-scrollbar {
-    background-color: #FBD784;
-    cursor: pointer;
 }
