@@ -158,24 +158,25 @@ img {
 
 .login {
     font-size: 17px;
-    position: relative;
     transition: 0.3s ease-in;
-    padding-left: 30px;
+    display: flex;
+    align-items: center;
+    width: 180px;
+    justify-content: space-between;
+}
+
+.login-icon {
+    fill: white;
 }
 
 .login:hover {
-    color: darkblue;
+    color: #FBD784;
 }
 
-.login::before {
-    content: '';
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    top: -6px;
-    left: 0;
-    background-image: url(../img/account.svg);
+.login:hover .login-icon {
+    fill: #FBD784;
 }
+
 
 .label {
     color: #FBD784;
@@ -296,7 +297,8 @@ img {
     margin-bottom: 27px;
 }
 
-.content__text__title-scroll {
+.content__text__title-scroll,
+.content__text-continue {
     color: #FBD784;
 }
 
@@ -508,7 +510,6 @@ img {
 
 .content__text__title-more {
     position: relative;
-    padding-left: 50px;
     padding-bottom: 15px;
 }
 
@@ -611,6 +612,10 @@ img {
         font-size: 12px;
     }
 
+    .content__text__title-more::before {
+        right: 10px;
+    }
+
 }
 
 @media (max-width: 479px) {
@@ -618,6 +623,14 @@ img {
     .header__title-label::before {
         flex: 0 0 50px;
         margin: 0 10px 0 0;
+    }
+
+    .label {
+        padding-left: 60px;
+    }
+
+    .label::before {
+        width: 40px;
     }
 
     .footer-inner {
