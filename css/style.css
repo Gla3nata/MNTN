@@ -11,7 +11,7 @@
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Bold.eot') format('embedded-opentype'), url('../fonts/Gilroy-Bold.ttf') format('truetype'), url('../fonts/Gilroy-Bold.woff') format('woff');
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-display: swap;
 }
 
@@ -19,7 +19,7 @@
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-Medium.eot') format('embedded-opentype'), url('../fonts/Gilroy-Medium.ttf') format('truetype'), url('../fonts/Gilroy-Medium.woff') format('woff');
     font-style: normal;
-    font-weight: medium;
+    font-weight: 500;
     font-display: swap;
 }
 
@@ -27,7 +27,7 @@
     font-family: 'Gilroy';
     src: url('../fonts/Gilroy-ExtraBold.eot') format('embedded-opentype'), url('../fonts/Gilroy-ExtraBold.ttf') format('truetype'), url('../fonts/Gilroy-ExtraBold.woff') format('woff');
     font-style: normal;
-    font-weight: extrabold;
+    font-weight: 800;
     font-display: swap;
 }
 
@@ -35,7 +35,7 @@
     font-family: 'Chronicle Display';
     src: url('../fonts/Chronicle-display-bold.eot') format('embedded-opentype'), url('../fonts/Chronicle-display-bold.ttf') format('truetype'), url('../fonts/Chronicle-display-bold.svg') format('svg'), url('../fonts/Chronicle-display-bold.woff') format('woff');
     font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-display: swap;
 }
 
@@ -43,7 +43,7 @@
     font-family: 'Chronicle Display';
     src: url('../fonts/Chronicle-display-semibold.eot') format('embedded-opentype'), url('../fonts/Chronicle-display-semibold.ttf') format('truetype'), url('../fonts/Chronicle-display-semibold.svg') format('svg'), url('../fonts/Chronicle-display-semibold.woff') format('woff');
     font-style: normal;
-    font-weight: semibold;
+    font-weight: 600;
     font-display: swap;
 }
 
@@ -209,8 +209,6 @@ img {
     align-items: center;
 }
 
-
-
 .header__title {
     font-size: 88px;
     line-height: 1;
@@ -232,13 +230,12 @@ img {
 }
 
 .content::before {
-    pointer-events: none;
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 300px;
+    height: 100px;
     transform: translate(0, -100%);
     background: linear-gradient(180deg, rgba(11, 29, 38, 0) 0%, #0B1D26 61.38%);
 }
