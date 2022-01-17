@@ -533,7 +533,7 @@ img {
     }
 }
 
-@media (max-width: 1780px) {
+@media (max-width: 1240px) {
     .pages__scroll {
         display: none;
     }
